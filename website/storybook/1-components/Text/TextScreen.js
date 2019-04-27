@@ -11,6 +11,7 @@ const TextScreen = () => (
       Text is component for displaying text. It supports style, basic touch
       handling, and inherits typographic styles from ancestor elements.
     </AppText>
+    <NavBar />
   </UIExplorer>
 );
 

@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 export const NavBar = (props: NavBarProps) => {
   return (
     <View style={styles.container}>
-      <Text>NavBar</Text>
+      <Text>I'm a NavBar</Text>
     </View>
   );
 };
