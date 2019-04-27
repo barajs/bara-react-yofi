@@ -25,7 +25,7 @@ const Divider = () => <View style={styles.divider} />;
 
 const SourceLink = ({uri}) => (
   <ExternalLink
-    href={`https://github.com/necolas/react-native-web/tree/master/packages/website/storybook/${uri}`}
+    href={`https://github.com/barajs/bara-react-yofi/tree/master/website/storybook/${uri}`}
     style={styles.link}>
     View source code on GitHub
   </ExternalLink>
