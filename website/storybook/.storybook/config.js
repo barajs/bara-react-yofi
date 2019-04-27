@@ -7,8 +7,8 @@ const context = require.context('../', true, /Screen\.js$/);
 addDecorator(centered);
 
 setOptions({
-  name: 'React Native Web',
-  url: 'https://necolas.github.io/react-native-web',
+  name: 'Bara React Yofi',
+  url: 'https://yofi.barajs.dev',
   goFullScreen: false,
   addonPanelInRight: false,
   showSearchBox: false,
