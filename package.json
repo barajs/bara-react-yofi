@@ -1,32 +1,37 @@
 {
   "name": "bara-react-yofi",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.13.8",
-    "@types/react": "16.8.14",
-    "@types/react-dom": "16.8.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0",
-    "typescript": "3.4.5"
-  },
+  "description": "Collection of beautiful React components work with Bara cross-platform",
+  "version": "0.0.0",
+  "private": false,
   "scripts": {
+    "compile": "tsc -b ./tsconfig.lib.json",
+    "compile:watch": "tsc -b ./tsconfig.lib.json -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "dependencies": {
+    "bara": "2.4.0",
+    "bara-react": "3.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-native-web": "0.11.2"
+  },
+  "devDependencies": {
+    "@types/react-native": "0.57.50",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.8",
+    "@types/react": "16.8.14",
+    "@types/react-dom": "16.8.4",
+    "react-scripts": "3.0.0",
+    "typescript": "3.4.5"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

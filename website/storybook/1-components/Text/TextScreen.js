@@ -3,6 +3,8 @@ import {StyleSheet, Text} from 'react-native';
 
 import UIExplorer, {AppText, storiesOf} from '../../ui-explorer';
 
+import {NavBar} from '../../../../dist';
+
 const TextScreen = () => (
   <UIExplorer title="Text" url="1-components/Text">
     <AppText>
