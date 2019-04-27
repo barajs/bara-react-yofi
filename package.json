@@ -7,9 +7,9 @@
     "compile": "tsc -b ./tsconfig.lib.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+	"build": "cd website && yarn build"
   },
   "dependencies": {
     "bara": "2.4.0",
