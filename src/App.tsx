@@ -2,10 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { SideBar, SideBarItem, SideBarSeparator } from './lib'
+import { SideBar, SideBarItem, SideBarSeparator, SideBarSpace } from './lib'
 
 const App: React.FC = () => {
-  const horizontal = false
+  const horizontal = true
   return (
     <div className="App">
       <header className="App-header">
@@ -15,9 +15,12 @@ const App: React.FC = () => {
           horizontalSide="bottom"
           verticalSide="left"
         >
-          <SideBarItem name="home" iconMaterial="home" />
+          <SideBarItem name="home" iconMaterial="home" label="Home" />
           <SideBarSeparator horizontal={horizontal} />
-          <SideBarItem name="home" iconMaterial="home" />
+          <SideBarItem name="light-bulb" iconOcticon="light-bulb" label="Light" />
+          <SideBarSpace />
+          <SideBarSeparator horizontal={horizontal} />
+          <SideBarItem name="plus" iconOcticon="plus" label="Add" />
           <SideBarItem
             name="settings"
             iconMaterial="settings"
