@@ -1,7 +1,7 @@
 {
   "name": "bara-react-yofi",
   "description": "Collection of beautiful React components work with Bara cross-platform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "module": "dist/index.js",
   "main": "dist/index.js",
@@ -18,7 +18,9 @@
     "typescript",
     "cross-platform"
   ],
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "compile": "tsc -b ./tsconfig.lib.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",

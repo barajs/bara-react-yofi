@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/barajs/bara-react-yofi/compare/v1.0.0...v1.0.1) (2019-04-29)
+
+
+### Bug Fixes
+
+* **export:** forgot to export variables ([ff2a5fb](https://github.com/barajs/bara-react-yofi/commit/ff2a5fb))
+
 # 1.0.0 (2019-04-29)
 
 
