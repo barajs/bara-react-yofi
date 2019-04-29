@@ -3,7 +3,11 @@
     "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -17,7 +21,11 @@
     "declaration": true,
     "rootDir": "src/lib",
     "outDir": "dist",
-    "typeRoots": ["./@types", "./node_modules/@types"]
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
-  "include": ["src/lib"]
+  "include": [
+    "src/lib"
+  ]
 }
