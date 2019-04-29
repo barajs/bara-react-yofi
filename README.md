@@ -41,7 +41,9 @@ export const MySideBar = () => {
 
 #### Bara API:
 
-##### `whenSideBarItemPress(name: string)(callback: (...args: any[]) => void)`: Bara Trigger to know when a SideBarItem is pressed.
+##### `whenSideBarItemPress(name: string)(callback: (...args: any[]) => void)`:
+
+Bara Trigger to know when a SideBarItem is pressed.
 
 * Params:
     - `name`: Which SideBarItem's name
