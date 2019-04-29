@@ -7,15 +7,16 @@ export interface NavBarProps {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-	backgroundColor: '#ccc'
+	flex: 1,
+	backgroundColor: '#ccc',
+	borderWidth: 1
   },
 });
 
 export const NavBar = (props: NavBarProps) => {
   return (
     <View style={styles.container}>
-      <Text>I'm a NavBar</Text>
+      <Text style={{color: 'red'}}>Example NavBar</Text>
     </View>
   );
 };

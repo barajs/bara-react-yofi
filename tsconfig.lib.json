@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "isolatedModules": false,
-    "jsx": "react",
+    "jsx": "react-native",
     "noEmit": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,

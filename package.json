@@ -8,7 +8,8 @@
     "compile": "tsc -b ./tsconfig.lib.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",
     "compile:website": "cd website && yarn build",
-	"start:website": "cd website && yarn start",
+    "compile:website-debug": "cd website && yarn build --debug-webpack",
+    "start:website": "cd website && yarn start",
     "start": "yarn compile && run-p compile:watch start:website",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -16,6 +17,7 @@
     "build": "run-s compile compile:website"
   },
   "dependencies": {
+    "@storybook/react": "4.1.18",
     "bara": "2.4.0",
     "bara-react": "3.0.0",
     "react": "^16.8.6",
@@ -36,7 +38,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

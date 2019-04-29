@@ -1,20 +1,48 @@
 const path = require('path');
 const webpack = require('webpack');
 
-module.exports = storybookBaseConfig => {
-  storybookBaseConfig.module.rules.push({
+module.exports = ({config}) => {
+  config.module.rules.push({
     test: /\.(gif|jpe?g|png|svg)$/,
     use: {
       loader: 'url-loader',
-      options: { name: '[name].[ext]' }
-    }
+      options: {name: '[name].[ext]'},
+    },
   });
 
-  storybookBaseConfig.resolve.extensions = ['.web.js', '.js', '.json', '.web.jsx', '.jsx'];
+  config.resolve.extensions = [
+    '.web.js',
+    '.js',
+    '.json',
+    '.web.jsx',
+    '.jsx',
+    '.ts',
+    '.tsx'
+  ];
 
-  storybookBaseConfig.resolve.alias = {
-    'react-native': 'react-native-web'
+  config.resolve.alias = {
+    'react-native': 'react-native-web',
   };
 
-  return storybookBaseConfig;
+  config.module.rules.push({
+    test: /\.(ts|tsx)$/,
+    use: [
+      {
+        loader: require.resolve('awesome-typescript-loader'),
+      },
+      {
+        loader: require.resolve('react-docgen-typescript-loader'),
+      },
+    ],
+  });
+
+  config.module.rules.push({
+    test: /\.(ts|tsx)$/,
+    loader: require.resolve('babel-loader'),
+    options: {
+      presets: [['react-app', { flow: false, typescript: true }]],
+    },
+  });
+
+  return config;
 };
