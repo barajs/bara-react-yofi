@@ -18,6 +18,7 @@
     "typescript",
     "cross-platform"
   ],
+  "files": ["dist"],
   "scripts": {
     "compile": "tsc -b ./tsconfig.lib.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",
