@@ -30,7 +30,6 @@
     "start": "yarn compile && run-p compile:watch start:website",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "cd website && yarn install --frozen-lockfile",
     "build": "run-s compile compile:website",
     "build:react": "react-scripts build",
     "commit": "git-cz"
