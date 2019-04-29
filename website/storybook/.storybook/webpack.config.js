@@ -10,6 +10,16 @@ module.exports = storybookBaseConfig => {
     }
   });
 
+  storybookBaseConfig.module.rules.push({
+    test: /\.ttf$/,
+    use: {
+      loader: "url-loader", // or directly file-loader
+      options: {
+        include: path.resolve(__dirname, "node_modules/react-native-vector-icons"),
+      }
+    },
+  })
+
   storybookBaseConfig.resolve.extensions = ['.web.js', '.js', '.json', '.web.jsx', '.jsx'];
 
   storybookBaseConfig.resolve.alias = {
