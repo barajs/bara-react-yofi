@@ -1,44 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# bara-react-yofi
 
-## Available Scripts
+Collection of beautiful React components work with Bara cross-platform
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+This package was built on top of Bara and React, to use this library you have to install its peer dependencies.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+yarn add -E bara bara-react bara-react-yofi
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## API
 
-### `npm test`
+### SideBar
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dynamic SideBar that can be render in 4 cornor (top, bottom, left, right) of any application.
 
-### `npm run build`
+SideBar also has support to the device orientation.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### React Component:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```javascript
+import {SideBar, SideBarItem} from 'bara-react-yofi'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export const MySideBar = () => {
+  <SideBar
+    horizontal={false}
+    horizontalSide="bottom"
+    verticalSide="left"
+  >
+    <SideBarItem name="home" iconMaterial="home" />
+    <SideBarItem
+      name="settings"
+      iconMaterial="settings"
+      label="Settings"
+    />
+  </SideBar>
+}
+```
 
-### `npm run eject`
+#### Bara API:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### `whenSideBarItemPress(name: string)(callback: (...args: any[]) => void)`: Bara Trigger to know when a SideBarItem is pressed.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Params:
+    - `name`: Which SideBarItem's name
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contribute
 
-## Learn More
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/barajs/bara-react-yofi)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT © [BaraJS](https://barajs.dev)
