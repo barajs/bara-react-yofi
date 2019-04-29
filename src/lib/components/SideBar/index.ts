@@ -1,5 +1,7 @@
+export * from './SideBarLayout'
 export * from './SideBar'
 export * from './SideBarItem'
 export * from './SideBarSeparator'
 export * from './SideBarSpace'
+export * from './SideBarContent'
 export * from './api'

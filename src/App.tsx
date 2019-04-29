@@ -1,19 +1,20 @@
+import { View } from 'bara-react';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { SideBar, SideBarItem, SideBarSeparator, SideBarSpace } from './lib'
+import { SideBarLayout, SideBar, SideBarItem, SideBarSeparator, SideBarSpace, SideBarContent } from './lib'
 
 const App: React.FC = () => {
   const horizontal = true
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <View style={{ width: '100%', height: '100%', backgroundColor: '#ccc' }}>
+      <SideBarLayout horizontal={horizontal}
+        horizontalSide="bottom"
+        verticalSide="right">
         <SideBar
+          name="sidebar-demo"
           horizontal={horizontal}
-          horizontalSide="bottom"
-          verticalSide="left"
         >
           <SideBarItem name="home" iconMaterial="home" label="Home" />
           <SideBarSeparator horizontal={horizontal} />
@@ -27,16 +28,11 @@ const App: React.FC = () => {
             label="Settings"
           />
         </SideBar>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <SideBarContent>
+          <img src={logo} className="App-logo" alt="logo" />
+        </SideBarContent>
+      </SideBarLayout>
+    </View>
   );
 }
 

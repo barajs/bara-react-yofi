@@ -4,16 +4,14 @@ import {
 } from '../variables'
 
 export const sharedStyles = {
-  sideBarPosition: {
-    zIndex: 1000,
-    position: 'absolute',
-    backgroundColor: '#ccc',
+  sideBarLayout: {
+    display: 'flex',
+    flex: 1,
+    backgroundColor: '#222'
   },
   sideBar: {
-    position: 'relative',
-    flexGrow: 1,
-    width: '100%',
-    height: '100%',
+    zIndex: 1000,
+    backgroundColor: '#ccc'
   },
   sideBarItem: {
     alignSelf: 'center',
@@ -33,4 +31,7 @@ export const sharedStyles = {
   sideBarItemLabel: {
     fontSize: 10,
   },
+  sideBarContent: {
+    flex: 1
+  }
 }
