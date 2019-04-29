@@ -3,7 +3,11 @@
   "description": "Collection of beautiful React components work with Bara cross-platform",
   "version": "0.0.0",
   "license": "MIT",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "private": false,
+  "keywords": ["bara", "react", "react-native", "material", "beautiful", "ui", "ux", "typescript", "cross-platform"],
   "scripts": {
     "compile": "tsc -b ./tsconfig.lib.json",
     "compile:watch": "tsc -b ./tsconfig.lib.json -w",
