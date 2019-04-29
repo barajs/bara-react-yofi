@@ -12,7 +12,6 @@ export const sharedStyles = {
   sideBar: {
     position: 'relative',
     flexGrow: 1,
-    justifyContent: 'space-between',
     width: '100%',
     height: '100%',
   },

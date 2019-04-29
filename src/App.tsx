@@ -2,18 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { SideBar, SideBarItem } from './lib'
+import { SideBar, SideBarItem, SideBarSeparator } from './lib'
 
 const App: React.FC = () => {
+  const horizontal = false
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <SideBar
-          horizontal={false}
+          horizontal={horizontal}
           horizontalSide="bottom"
           verticalSide="left"
         >
+          <SideBarItem name="home" iconMaterial="home" />
+          <SideBarSeparator horizontal={horizontal} />
           <SideBarItem name="home" iconMaterial="home" />
           <SideBarItem
             name="settings"
