@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/barajs/bara-react-yofi/compare/v1.1.0...v1.1.1) (2019-05-01)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([99283fe](https://github.com/barajs/bara-react-yofi/commit/99283fe))
+* **deps:** pin dependencies ([#3](https://github.com/barajs/bara-react-yofi/issues/3)) ([779af19](https://github.com/barajs/bara-react-yofi/commit/779af19))
+
 # [1.1.0](https://github.com/barajs/bara-react-yofi/compare/v1.0.2...v1.1.0) (2019-04-29)
 
 
