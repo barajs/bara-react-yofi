@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/barajs/bara-react-yofi/compare/v1.1.1...v1.1.2) (2019-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bara-react to v3.1.0 ([feb98a7](https://github.com/barajs/bara-react-yofi/commit/feb98a7))
+
 ## [1.1.1](https://github.com/barajs/bara-react-yofi/compare/v1.1.0...v1.1.1) (2019-05-01)
 
 
