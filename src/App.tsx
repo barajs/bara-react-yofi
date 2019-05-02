@@ -25,7 +25,7 @@ const App: React.FC = () => {
           <SideBarItem
             name="settings"
             iconMaterial="settings"
-            label="Settings"
+            label="Settings Long"
           />
         </SideBar>
         <SideBarContent>

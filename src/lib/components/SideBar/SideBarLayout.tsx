@@ -13,7 +13,7 @@ export interface SideBarLayoutProps extends BaraReactView {
   verticalSide?: SideBarDynamicSide
 }
 
-export const SideBarLayout = ({ children, horizontal, horizontalSide, verticalSide }: SideBarLayoutProps) => {
+export const SideBarLayout = ({ children, horizontal, horizontalSide, verticalSide, ...props }: SideBarLayoutProps) => {
   let direction = horizontal ? horizontalSide! : verticalSide!
 
   const map = {
@@ -27,7 +27,7 @@ export const SideBarLayout = ({ children, horizontal, horizontalSide, verticalSi
     flexDirection: map[direction]
   }
   return (
-    <View style={{ position: 'absolute', flex: 1, width: '100%', height: '100%' }}>
+    <View style={{ position: 'absolute', flex: 1, width: '100%', height: '100%' }} {...props}>
       <View style={[styles.sideBarLayout as ViewStyle, side as ViewStyle]}>
         {children}
       </View>

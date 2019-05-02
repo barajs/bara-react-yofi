@@ -9,9 +9,9 @@ export interface SideBarContentProps extends BaraReactView {
   style?: any
 }
 
-export const SideBarContent = ({ children, style }: SideBarContentProps) => {
+export const SideBarContent = ({ children, style, ...props }: SideBarContentProps) => {
   return (
-    <View style={[styles.sideBarContent as ViewStyle]}>
+    <View style={[styles.sideBarContent as ViewStyle, style]} {...props}>
       {children}
     </View>
   )

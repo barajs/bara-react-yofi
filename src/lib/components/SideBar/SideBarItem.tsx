@@ -13,6 +13,8 @@ import { styles } from './styles'
 export interface SideBarItemProps extends BaraReactTouchableOpacity {
   iconOcticon?: string
   iconMaterial?: string
+  iconSize?: number
+  labelSize?: number
   label?: string
   style?: any
 }
@@ -20,6 +22,8 @@ export interface SideBarItemProps extends BaraReactTouchableOpacity {
 export const SideBarItem = ({
   iconMaterial,
   iconOcticon,
+  iconSize,
+  labelSize,
   label,
   style,
   ...props
@@ -31,23 +35,23 @@ export const SideBarItem = ({
       style={[styles.sideBarItem as ViewStyle, style]}
       {...props}
     >
-      <View kind="sidebar-view">
+      <View style={{ overflow: 'hidden' }} kind="sidebar-view">
         {iconMaterial && (
           <MaterialIcons
             name={iconMaterial}
-            size={30}
+            size={iconSize || 30}
             style={styles.sideBarIcon as ViewStyle}
           />
         )}
         {iconOcticon && (
           <Octicons
             name={iconOcticon}
-            size={30}
+            size={iconSize || 30}
             style={styles.sideBarIcon as ViewStyle}
           />
         )}
         {hasLabel && (
-          <Text style={styles.sideBarItemLabel as TextStyle}>{label}</Text>
+          <Text style={[styles.sideBarItemLabel as TextStyle, { fontSize: labelSize || 10 }]} numberOfLines={1}>{label}</Text>
         )}
       </View>
     </TouchableOpacity>

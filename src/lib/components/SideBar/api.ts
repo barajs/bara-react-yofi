@@ -5,7 +5,7 @@ import {
   whenTouchableOpacityPress,
 } from 'bara-react'
 
-export const whenSideBarItemPress = (name?: string) => (
+export const whenSideBarItemPressed = (name?: string) => (
   callback: (...args: any[]) => void,
 ) => {
   return whenTouchableOpacityPress(
