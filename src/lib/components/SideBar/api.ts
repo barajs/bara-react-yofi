@@ -1,17 +1,20 @@
-import { and } from 'bara'
+import { and, ConditionPipe, ActionPipe } from 'bara'
 import {
+  BaraBaseComponentProps,
   kindOfTouchableOpacity,
-  nameOfTouchableOpacity,
   whenTouchableOpacityPress,
 } from 'bara-react'
 
-export const whenSideBarItemPressed = (name?: string) => (
-  callback: (...args: any[]) => void,
-) => {
+// Conditional Presets
+export const anySideBarItem = (data: BaraBaseComponentProps) => true
+export const nameOfSideBarItem = (checkName: string) => ({ name }: BaraBaseComponentProps) => name === checkName
+
+// Bara Triggers
+export const whenSideBarItemPressed = (...conditions: Array<ConditionPipe<any>>) => (...actions: Array<ActionPipe<any>>) => {
   return whenTouchableOpacityPress(
     and(
       kindOfTouchableOpacity('sidebar-button'),
-      nameOfTouchableOpacity(name!),
-    ),
-  )(callback)
+      ...conditions
+    )
+  )(...actions)
 }
