@@ -2398,7 +2398,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-bara-react-icons@1.1.0:
+bara-react-icons@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/bara-react-icons/-/bara-react-icons-1.1.0.tgz#85aa56bba763727faa3179d153b2e187868841a3"
   integrity sha512-TQjH//I/IofzWq8G2HXnpsXVLAS4EW9dOAUp+3AMKKmyScghkXCsugKk4UTb/qT0FNIztjDeePbuf1IrNst1/Q==
@@ -2415,7 +2415,7 @@ bara-react@2.0.1:
     bara "2.3.1"
     react-native-web "0.11.2"
 
-bara-react@3.1.0:
+bara-react@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bara-react/-/bara-react-3.1.0.tgz#33a0d45ce2b96c722e2675aa542c50bcd599aabf"
   integrity sha512-Gy2A1KZWQvReAHZrSLNp+AfkavDT6O8kBz28t3e6iXwM1aPMFI597BpA0hhB5JXXwgAaCC1isfERjpphg5rT/w==
@@ -2432,7 +2432,7 @@ bara@2.3.1:
     "@bara/basics" "^2.3.1"
     "@bara/core" "^2.3.1"
 
-bara@2.4.0, bara@^2.4.0:
+bara@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/bara/-/bara-2.4.0.tgz#f8fdb2b074c688b77ac421b0147caf579b396148"
   integrity sha512-qpW78R6Wd0VOQGBzG47+KIw/TBLExQobvrgFcmkA65/m0TWASMCdfwAGQErBD6ggJNXdz2smTeDdw74UDGTtcQ==

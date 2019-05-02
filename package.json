@@ -35,9 +35,9 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "bara": "2.4.0",
-    "bara-react": "3.1.0",
-    "bara-react-icons": "1.1.0",
+    "bara": "^2.4.0",
+    "bara-react": "^3.1.0",
+    "bara-react-icons": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-native-web": "0.11.2"

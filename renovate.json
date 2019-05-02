@@ -2,6 +2,15 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "packagePatterns": ["^bara"],
+      "rangeStrategy": "replace",
+      "groupName": "bara packages",
+      "pin": false,
+      "automerge": true
+	  }
+  ],
   "automerge": true,
   "major": {
     "automerge": false
