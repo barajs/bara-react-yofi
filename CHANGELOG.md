@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/barajs/bara-react-yofi/compare/v1.1.2...v1.2.0) (2019-05-02)
+
+
+### Features
+
+* **SideBar:** add iconSize and labelSize props for SideBarItem ([f045b54](https://github.com/barajs/bara-react-yofi/commit/f045b54))
+* **SideBar:** add new API anySideBarItem, nameOfSideBarItem ([ef525cb](https://github.com/barajs/bara-react-yofi/commit/ef525cb))
+
 ## [1.1.2](https://github.com/barajs/bara-react-yofi/compare/v1.1.1...v1.1.2) (2019-05-02)
 
 
