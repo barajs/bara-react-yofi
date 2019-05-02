@@ -5,7 +5,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import { SideBarLayout, SideBar, SideBarItem, SideBarSeparator, SideBarSpace, SideBarContent, whenSideBarItemPressed, anySideBarItem, nameOfSideBarItem } from './lib'
-import { useBasicsStream, useBarnStream } from 'bara';
 
 const App: React.FC = () => {
   const [clicked] = useBarnState('clicked', 'nothing')
