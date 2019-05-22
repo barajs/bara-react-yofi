@@ -1,7 +1,7 @@
 {
   "name": "bara-react-yofi",
   "description": "Collection of beautiful React components work with Bara cross-platform",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "module": "dist/index.js",
   "main": "dist/index.js",
