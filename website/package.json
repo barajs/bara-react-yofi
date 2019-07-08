@@ -7,8 +7,8 @@
     "start": "start-storybook -p 9001 -c ./storybook/.storybook"
   },
   "dependencies": {
-    "@storybook/addon-options": "3.4.12",
-    "@storybook/react": "3.4.12",
+    "@storybook/addon-options": "5.1.9",
+    "@storybook/react": "5.1.9",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
