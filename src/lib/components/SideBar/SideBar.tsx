@@ -1,6 +1,6 @@
 import { BaraReactView, View } from 'bara-react'
 import React, { ReactNode } from 'react'
-import { ViewStyle } from 'react-native'
+import { ViewStyle, StyleProp } from 'react-native'
 
 import { sidebarSize } from '../variables'
 import { styles } from './styles'
@@ -8,11 +8,15 @@ import { styles } from './styles'
 export interface SideBarProps extends BaraReactView {
   children?: ReactNode
   horizontal?: boolean
+  style?: StyleProp<ViewStyle>
+  size?: number
 }
 
 export const SideBar = ({
   children,
   horizontal = true,
+  style: customStyle,
+  size = 48,
   ...props
 }: SideBarProps) => {
   return (
@@ -20,12 +24,13 @@ export const SideBar = ({
       style={[
         styles.sideBar as ViewStyle,
         horizontal ? {
-          height: sidebarSize,
-          flexDirection: 'row'
+          height: size || sidebarSize,
+          flexDirection: 'row',
         } : {
-            width: sidebarSize,
-            flexDirection: 'column'
-          }
+            width: size || sidebarSize,
+            flexDirection: 'column',
+        },
+        customStyle
       ]}
     >
       {children}

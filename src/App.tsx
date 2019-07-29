@@ -13,10 +13,13 @@ const App: React.FC = () => {
     <View style={{ width: '100%', height: '100%', backgroundColor: '#ccc' }}>
       <SideBarLayout horizontal={horizontal}
         horizontalSide="bottom"
-        verticalSide="right">
+        verticalSide="right"
+        >
         <SideBar
           name="sidebar-demo"
           horizontal={horizontal}
+          size={48}
+          style={{backgroundColor: '#c2c'}}
         >
           <SideBarItem name="home" iconMaterial="home" label="Home" />
           <SideBarSeparator horizontal={horizontal} />
