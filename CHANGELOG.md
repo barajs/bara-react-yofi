@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/barajs/bara-react-yofi/compare/v1.2.2...v1.3.0) (2019-07-29)
+
+
+### Features
+
+* **SideBar:** add  and  props ([769dbf4](https://github.com/barajs/bara-react-yofi/commit/769dbf4))
+
 ## [1.2.2](https://github.com/barajs/bara-react-yofi/compare/v1.2.1...v1.2.2) (2019-07-03)
 
 
