@@ -49,7 +49,7 @@
     "@types/node": "11.13.21",
     "@types/react": "16.9.3",
     "@types/react-dom": "16.9.1",
-    "@types/react-native": "0.60.16",
+    "@types/react-native": "0.60.17",
     "commitizen": "3.1.2",
     "cz-conventional-changelog": "2.1.0",
     "npm-run-all": "4.1.5",
