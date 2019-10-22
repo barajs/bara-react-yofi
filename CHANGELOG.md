@@ -1,3 +1,10 @@
+## [1.3.7](https://github.com/barajs/bara-react-yofi/compare/v1.3.6...v1.3.7) (2019-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v16.11.0 ([48891ad](https://github.com/barajs/bara-react-yofi/commit/48891ad))
+
 ## [1.3.6](https://github.com/barajs/bara-react-yofi/compare/v1.3.5...v1.3.6) (2019-10-03)
 
 
