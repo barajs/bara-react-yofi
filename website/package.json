@@ -17,7 +17,7 @@
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-plugin-react-native-web": "0.11.7",
-    "url-loader": "1.1.2",
+    "url-loader": "2.3.0",
     "webpack": "4.41.2"
   }
 }
