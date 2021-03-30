@@ -40,7 +40,7 @@
     "bara-react-icons": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-native-web": "0.15.3"
+    "react-native-web": "0.15.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.6",
