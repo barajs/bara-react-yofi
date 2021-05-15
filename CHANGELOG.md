@@ -1,3 +1,10 @@
+## [1.3.57](https://github.com/barajs/bara-react-yofi/compare/v1.3.56...v1.3.57) (2021-05-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-native-web to v0.16.3 ([e14e4e1](https://github.com/barajs/bara-react-yofi/commit/e14e4e1))
+
 ## [1.3.56](https://github.com/barajs/bara-react-yofi/compare/v1.3.55...v1.3.56) (2021-05-04)
 
 
