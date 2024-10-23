@@ -38,8 +38,8 @@
     "bara": "^2.4.0",
     "bara-react": "^3.1.0",
     "bara-react-icons": "^1.1.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-native-web": "0.19.9"
   },
   "devDependencies": {
@@ -47,8 +47,8 @@
     "@semantic-release/git": "7.0.18",
     "@types/jest": "24.9.1",
     "@types/node": "11.15.54",
-    "@types/react": "16.14.50",
-    "@types/react-dom": "16.9.21",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
     "@types/react-native": "0.72.5",
     "commitizen": "3.1.2",
     "cz-conventional-changelog": "2.1.0",
