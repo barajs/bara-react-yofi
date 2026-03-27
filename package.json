@@ -52,7 +52,7 @@
     "@types/react-native": "0.72.5",
     "commitizen": "3.1.2",
     "cz-conventional-changelog": "2.1.0",
-    "npm-run-all2": "5.0.0",
+    "npm-run-all2": "5.0.2",
     "react-scripts": "3.4.4",
     "semantic-release": "15.14.0",
     "typescript": "3.9.10"
